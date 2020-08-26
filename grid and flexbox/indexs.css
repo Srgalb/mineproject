@@ -1,0 +1,41 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(241, 240, 161);
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "asside tex tex tex"
+    "foote foote foote foote";
+  grid-gap: 6px;
+  grid-column-gap: 2px;
+}
+
+.heade {
+  background-color: red;
+  grid-area: header;
+}
+
+.assid {
+  background-color: rgb(173, 173, 255);
+  grid-area: asside;
+}
+
+.tex {
+  background-color: cadetblue;
+  grid-area: tex;
+}
+
+.foote {
+  background-color: chartreuse;
+  grid-area: foote;
+}
